@@ -6,13 +6,13 @@ public class munky : MonoBehaviour
 {
 
     public float radius = 5.0f;
-    public Transform center;
+    private Transform center;
     public int angle_offset = 90;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        center = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
